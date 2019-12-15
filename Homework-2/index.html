@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomeWork-2</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
+    <style>
+        * {
+            font-family: Montserrat;
+            font-size: 14px;
+        }
+        
+        #location {
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+        #submit {
+            margin-top: 20px;
+            width: 100%;
+            height: 34px;
+            background-color: rgb(142, 165, 230);
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        
+        .container {
+            width: 400px;
+            margin: 50px auto 50px auto;
+        }
+        
+        .short {
+            width: 186px;
+            display: inline;
+            padding: 8px 0px 8px 8px;
+            border-radius: 5px;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        
+        .long {
+            width: 388px;
+            display: block;
+            padding: 8px 0px 8px 8px;
+            border-radius: 5px;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        
+        .textInput {
+            margin-right: 12px;
+        }
+        
+        p {
+            display: inline;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+        
+        h1 {
+            font-size: 30px;
+        }
+        
+        h2 {
+            font-size: 24px;
+        }
+        
+        h3 {
+            font-size: 20px;
+        }
+        
+        fieldset {
+            border: solid black 2px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <fieldset>
+            <legend>HomeWork-2</legend>
+            <h1>Contact Detalis</h1>
+            <form action="" method="POST">
+                <input class="short" type="text" id="firstName" name="firstName" placeholder="First Name">
+                <input class="short" type="text " id="secondName " name="secondName " placeholder="Second Name">
+                <input class="long" type="email" id="email" name="email" placeholder="Email">
+                <input class="long" type="tel" id="phone" name="phone" placeholder="+40 (074) 111 399">
+
+                <h2>Choose a movie</h2>
+
+                <div>
+                    <label>
+                        <input class="textInput" type="radio" name="movie" value="spider-man">Spider-man
+                    </label>
+
+                    <label>
+                        <input class="textInput" type="radio" name="movie" value="terminator">Terminator
+                    </label>
+
+                    <label>
+                        <input class="textInput" type="radio" name="movie" value="avengers">Avengers
+                    </label>
+
+                    <label>
+                        <input class="textInput" type="radio" name="movie" value="starWars">Star Wars
+                    </label>
+                </div>
+
+
+
+
+                <label for="location">
+                    <select  name="location" id="location">
+                        <option value=" " selected disabled >Choose a location</option>
+                        <option value=" ">Cinema City-Iulius</option>
+                         <option value=" ">Cinema City-Vivo</option>
+                    </select>
+            </label>
+
+                <h3>Terms and conditions</h3>
+
+
+                <div>
+                    <p>By checking the box, you are agree with the terms.</p>
+                    <input id="checkbox" type="checkbox">
+                </div>
+
+                <input id="submit" type="submit" value="Buy Tickets">
+            </form>
+        </fieldset>
+    </div>
+
+    </html
