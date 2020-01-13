@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Montserrat;
+        }
+
+        body {
+            background-color: #f2f3f8
+        }
+
+        .displayBlock {
+            display: block;
+        }
+
+        .container {
+            margin: 0 auto;
+            margin-top: 130px;
+            box-sizing: border-box;
+            padding: 30px;
+            width: 390px;
+            height: 464px;
+            border-radius: 6px;
+            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        .check {
+            width: 40px;
+            height: 32px;
+            object-fit: contain;
+            margin-bottom: 30px;
+        }
+
+        .welcome {
+            width: 191px;
+            height: 29px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 8px;
+
+        }
+
+        .logIn {
+            width: 152px;
+            height: 19px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #9d9d9d;
+            margin-bottom: 51px;
+        }
+
+        .johnGmail {
+            width: 100%;
+            height: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            border: none;
+            margin-bottom: 40px;
+            display: block;
+            padding-bottom: 9px;
+            border-bottom: solid 1px #4255d8;
+
+
+        }
+
+        .johnGmail:hover {
+            border-bottom: solid 2px #4255d8;
+        }
+
+
+
+
+        .johnGmail::placeholder {
+            color: #000000;
+        }
+
+        .password {
+            width: 100%;
+            height: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #9d9d9d;
+            display: block;
+            border: none;
+            padding-bottom: 9px;
+            margin-bottom: 33px;
+            border-bottom: solid 1px #eaeaea;
+
+
+
+        }
+
+        .password:hover {
+            border-bottom: solid 2px #4255d8;
+        }
+
+        .password::placeholder {
+            color: #9d9d9d;
+        }
+
+        .forgotPassword {
+            width: 163px;
+            height: 18px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #4255d8;
+            display: block;
+            margin-bottom: 50px;
+
+
+        }
+
+
+
+        .signIn {
+            width: 100%;
+            height: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            border-radius: 6px;
+            background-color: #4255d8;
+            border: none;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="mailto:cosma.catalinioan@yahoo.com" method="POST" enctype="text/plain">
+            <img class="check" src="group/group.png" alt="Cherk mark">
+            <h1 class="welcome">Welcome back!</h1>
+            <h3 class="logIn">Log in to continue.</h3>
+            <label for="email"></label>
+            <input class="johnGmail" type="email" name="email" placeholder="john@gmail.com">
+            <div class="blueLine"></div>
+            <label for="password"></label>
+            <input class="password" type="password" name="password" placeholder="Password">
+            <div></div>
+            <a class="forgotPassword" href="http://127.0.0.1:5500/log-box.html">Forgot your password?</a>
+            <label for="submit"></label>
+            <input class="signIn" type="submit" name="submit" value="Sign in">
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
