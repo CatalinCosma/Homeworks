@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title></title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: gray;
+    }
+
+    .clock {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        height: 600px;
+        border: 10px solid black;
+        border-radius: 50%;
+        background: url(780524.jpg);
+        background-size: cover;
+    }
+
+    .clock:before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 3px);
+        left: 50%;
+        width: 40%;
+        height: 6px;
+        background-color: black;
+        animation: animate 60s linear infinite;
+        transform-origin: left ;
+    }
+
+
+    .clock:after {
+        content: '';
+        position: absolute;
+        top: calc(50% - 3px);
+        left: 50%;
+        width: 30%;
+        height: 6px;
+        background-color: black;
+        animation: animate 1000s linear infinite;
+        transform-origin: left ;
+    }
+
+    .center {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background: gray;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    @keyframes animate {
+        0% {
+            transform: rotate(-90deg);
+        }
+        100% {
+            transform: rotate(270deg);
+        }
+
+    }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <span class="center" ></span>
+    </div>
+</body>
+</html>
