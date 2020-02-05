@@ -7,29 +7,26 @@
 <body>
     <script>
 
-        // // ***********Convert centimeters to inches***************
+        // ***********Convert meters to inches***************
 
-        // function convert(a) {
-        //     return a * 2.54;
-        // }
+        function convert(a) {
+            return a / 0.0254;
+        }
 
-        // var con = convert(234);
-        // console.log("Centimeters to inches" + " " + con);
+        var con = convert(234);
+        console.log("Meters to inches" + " " + con);
 
-        // // ***********Convert celsius to fahrenheit***************
+        // ***********Convert celsius to fahrenheit***************
 
-        // function fah(a) {
-        //     return (a * 9 / 5) + 32;
-        // }
+        function fah(a) {
+            return a * 9 / 5 + 32;
+        }
 
-        // var cel = fah(30);
-        // console.log("Celsius to fahrenheit" + " " + cel);
+        var cel = fah(30);
+        console.log("Celsius to fahrenheit" + " " + cel);
 
-        // // **************Date and time*******************************
+        // **************Date and time*******************************
 
-        var date = new Date();
-
-        console.log(date);
 
 
 
